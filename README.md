@@ -1,11 +1,22 @@
 # LaunchMultiplayerNet 扩展版
 
-未转变者（Unturned）的 BepInEx 插件 —— **多插件网络通道复用框架**（扩展版）。
+> ### 🔗 原作者（原版）
+> 本仓库是基于 **@YU80Rice** 的 [LaunchMultiplayerNet](https://github.com/YU80Rice/LaunchMultiplayerNet)
+> **原版**扩展而来的分支，所有核心功能归原作者所有。
+> 在此向原作者致敬。请同时访问并支持原版项目。
 
-本仓库基于原版 `LaunchMultiplayerNet` 扩展而来，在保留原通道的基础上**新增 `SleepDawn = 103` 网络通道**，
-供作者的其他插件（如 [SleepToDawn](https://github.com/LovelyBubby/SleepToDawn)）使用。向后兼容，原插件（如 LaunchInventoryTidy / LaunchInPlaceReload）不受影响。
+## 与原版的区别
 
-## 扩展点
+| 项目 | 原版 | 本扩展版 |
+|---|---|---|
+| 网络通道 | 原版既有通道 | **新增 `SleepDawn = 103`** |
+| 消息类型 | 原版既有消息 | **新增 `RequestSleep = 30`、`SleepResult = 31`** |
+| 兼容性 | — | **向后兼容**：原插件（LaunchInventoryTidy / LaunchInPlaceReload 等）不受影响 |
+
+> 扩展目的：为作者的 [SleepToDawn](https://github.com/LovelyBubby/SleepToDawn)（睡觉到日出）插件提供
+> `SleepDawn = 103` 网络通道，实现客户端 → 服务器的睡觉请求收发。
+
+## 扩展点详情
 
 - `ModChannels.cs`：新增 `SleepDawn = 103`
 - `EModMessage`：新增 `RequestSleep = 30`、`SleepResult = 31`
@@ -56,4 +67,4 @@ Unturned/BepInEx/plugins/LaunchMultiplayerNet.dll
 
 ## License
 
-[MIT](LICENSE)
+本仓库同样遵循原作者项目的许可条款；文件版权归原作者 [YU80Rice](https://github.com/YU80Rice) 与扩展作者 [LovelyBubby](https://github.com/LovelyBubby) 所有。
