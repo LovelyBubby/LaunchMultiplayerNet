@@ -52,6 +52,3 @@
 Unturned/BepInEx/plugins/LaunchMultiplayerNet.dll
 ```
 
-## License
-
-本仓库同样遵循原作者项目的许可条款；文件版权归原作者 [YU80Rice](https://github.com/YU80Rice) 与扩展作者 [LovelyBubby](https://github.com/LovelyBubby) 所有。
