@@ -44,19 +44,6 @@
 - [BepInEx](https://github.com/BepInEx/BepInEx) 5.x
 - [Harmony](https://github.com/pardeike/Harmony)(BepInEx 自带)
 
-## 编译
-
-需要 [.NET SDK](https://dotnet.microsoft.com/download)（支持 net472）。
-
-默认游戏在 `E:\SteamLibrary\steamapps\common\Unturned`，
-路径不同时用 `-p:UnturnedDir=你的游戏目录` 覆盖：
-
-```bash
-dotnet build LaunchMultiplayerNet.csproj -c Release
-```
-
-产物在 `artifacts/LaunchMultiplayerNet.dll`。
-
 ## 安装
 
 客户端与服务器都要安装：
